@@ -45,11 +45,10 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+- Mongo DB
+- Express JS
+- Node js
+- CSS
 - Vanila JavaScript
 
 ### What I learned
