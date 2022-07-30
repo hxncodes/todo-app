@@ -1,1 +1,2 @@
-Web: node app.js
+$ cat Procfile
+web: npm start
