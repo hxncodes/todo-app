@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--text-color);
+  background-color: var(--light-grayish-blue);
+}
+
+:root {
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+  /*  Light Theme */
+
+  --very-light-gray: hsl(0, 0%, 98%);
+  --very-light-grayish-blue: hsl(236, 33%, 92%);
+  --light-grayish-blue: hsl(233, 11%, 84%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+  --text-color: hsl(237, 14%, 26%);
+
+  /* Dark Theme */
+
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue: hsl(237, 14%, 26%);
+}
+
+.dark-theme-variables {
+  --light-grayish-blue: hsl(235, 21%, 11%);
+  --very-light-gray: hsl(235, 24%, 19%);
+  --very-light-grayish-blue: hsl(233, 14%, 35%);
+  --text-color: hsl(234, 39%, 85%);
+
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(237, 14%, 26%);
+}
+
+h1 {
+  color: hsl(236, 33%, 92%);
+  letter-spacing: 1rem;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  justify-content: center;
+}
+
+.container img {
+  height: 45%;
+  width: 100%;
+  position: fixed;
+}
+.card {
+  position: absolute;
+  top: 50px;
+  min-width: 400px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-toggler {
+  cursor: pointer;
+  display: inline;
+}
+.theme-toggler span {
+  display: none;
+}
+
+.theme-toggler span.active {
+  display: inline;
+}
+
+.box {
+  max-width: 100%;
+  margin: 30px auto;
+  background: var(--very-light-gray);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.box:last-of-type {
+  margin-top: -30px;
+}
+
+.item {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--very-light-grayish-blue);
+}
+
+.item:last-of-type {
+  border-bottom-right-radius: none;
+}
+
+input:checked + p,
+.muted {
+  text-decoration: line-through;
+  color: var(--very-light-grayish-blue);
+  text-decoration-color: var(--very-light-grayish-blue);
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+input[type="text"] {
+  height: 50px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  width: 80%;
+  color: var(--text-color);
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+::placeholder {
+  color: grey;
+  /* opacity: 1; */
+}
+
+.cross {
+  position: absolute;
+  right: 20px;
+  display: none;
+}
+.item:hover .cross {
+  display: inline-block;
+  cursor: pointer;
+}
+.btn-area {
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-size: 11px;
+}
+
+button {
+  background: none;
+  border: none;
+  /* padding: 0; */
+  cursor: pointer;
+  font-size: 11px;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  color: var(--text-color);
+}
+.btn-area span:hover,
+button:hover {
+  color: var(--bright-blue);
+}
+
+.attribution {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  z-index: -10;
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
