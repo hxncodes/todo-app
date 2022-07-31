@@ -1,6 +1,6 @@
-# Frontend Mentor - Expenses chart component solution
+# Frontend Mentor - Todo app solution
 
-This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -24,24 +24,30 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 Users should be able to:
 
-- View the bar chart and hover over the individual bars to see the correct amounts for each day
-- See the current day’s bar highlighted in a different colour to the other bars
-- View the optimal layout for the content depending on their device’s screen size
+- View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
-- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
+- Add new todos to the list
+- Mark todos as complete
+- Delete todos from the list
+- Filter by all/active/complete todos
+- Clear all completed todos
+- Toggle light and dark mode
+- **Bonus**: Drag and drop to reorder items on the list
 
 ### Screenshot
 
-![](images/screenshot.png)
+![](screenshot.png)
 
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://github.com/hxncodes/todo-app)
+- Live Site URL: (https://serene-sierra-50536.herokuapp.com/)
 
 ## My process
+
+- Started server and built this app on home route.
 
 ### Built with
 
@@ -53,11 +59,12 @@ Users should be able to:
 
 ### What I learned
 
-- Showing data in chart form without external library like chart.js
+- I have practiced MongoDB, ExpressJS and NodeJS.
 
 ### Continued development
 
-- I want to hide the values written on bars. rather I want to show them when user hover on specific bar.
+- Custom check box is not implemented yet.
+- **Bonus** part of this project is pending.
 
 ## Author
 
@@ -67,4 +74,6 @@ Users should be able to:
 
 ## Acknowledgments
 
-js part of chart and some styled components copied from a solution available on Slack. right now I forget the name, I will mention later when I came across.
+- I am in the process of learning MERN Stack development.
+- For this I am following a course on Udemy by Miss Angela. I am thankful to her for a best course.
+- Link of the course is [https://www.udemy.com/course/the-complete-web-development-bootcamp/]
