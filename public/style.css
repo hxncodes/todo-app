@@ -195,4 +195,7 @@ button:hover {
   .card {
     width: 90%;
   }
+  .btn-area {
+    font-size: 8px;
+  }
 }
