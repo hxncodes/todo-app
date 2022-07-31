@@ -69,7 +69,8 @@ h1 {
 .card {
   position: absolute;
   top: 50px;
-  min-width: 400px;
+  width: 500px;
+  /* min-width: 400px; */
 }
 
 header {
@@ -188,4 +189,10 @@ button:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 90%;
+  }
 }
