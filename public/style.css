@@ -197,5 +197,6 @@ button:hover {
   }
   .btn-area {
     font-size: 8px;
+    gap: 8px;
   }
 }
