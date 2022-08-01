@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const ejs = require("ejs");
 const res = require("express/lib/response");
@@ -10,9 +11,7 @@ app.use(express.static("public")); //to link css and images
 app.use(bodyParser.urlencoded({ extended: true })); //parse data to server
 
 //Connection to mongoDB
-mongoose.connect(
-  "mongodb+srv://admin-hxn:w2t3rf211@cluster0.fu9k7ux.mongodb.net/todoDB"
-);
+mongoose.connect(process.env.QUERY);
 
 //Schema Declaration
 const itemsSchema = { task: String, status: String };
